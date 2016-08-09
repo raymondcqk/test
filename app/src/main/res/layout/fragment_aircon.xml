@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <!--<TextView-->
+
+    <!--android:text="空调遥控"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/id_tv_air_temperature"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="25"-->
+    <!--android:textSize="70sp" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/id_tv_air_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="25℃"
+            android:textSize="75sp" />
+
+        <Button
+            android:id="@+id/id_air_minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/minus1"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/id_air_plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/plus1"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tv_air_temperature">
+
+        <TextView
+            android:id="@+id/id_tv_title_room_temper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="77dp"
+            android:layout_marginStart="77dp"
+            android:text="室温" />
+
+        <TextView
+            android:id="@+id/id_tv_room_temper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/id_tv_title_room_temper"
+            android:layout_toRightOf="@+id/id_tv_title_room_temper"
+            android:text="18℃" />
+
+        <TextView
+            android:id="@+id/id_tv_title_humidness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/id_tv_title_room_temper"
+            android:layout_alignStart="@+id/id_tv_title_room_temper"
+            android:layout_below="@id/id_tv_room_temper"
+            android:layout_marginTop="5dp"
+            android:text="湿度" />
+
+        <TextView
+            android:id="@+id/id_tv_humidness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_tv_room_temper"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/id_tv_title_humidness"
+            android:layout_toRightOf="@+id/id_tv_title_humidness"
+            android:text="88%" />
+
+        <TextView
+            android:id="@+id/id_tv_title_comfor_temper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/id_tv_humidness"
+            android:layout_marginLeft="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_toEndOf="@+id/id_tv_room_temper"
+            android:layout_toRightOf="@+id/id_tv_room_temper"
+            android:text="推荐温度"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_tv_comfort_temper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/id_tv_title_comfor_temper"
+            android:layout_alignRight="@+id/id_tv_title_comfor_temper"
+            android:layout_alignTop="@+id/id_tv_humidness"
+            android:text="24℃"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定位"
+        android:id="@+id/locate" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/level"
+        android:hint="发送热舒适等级-2~2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送热舒适"
+        android:id="@+id/send"
+        android:layout_gravity="right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/id_img_air_mode"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ac_auto" />
+
+            <TextView
+                android:id="@+id/id_tv_air_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/id_img_air_speed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/speed_s" />
+
+            <TextView
+                android:id="@+id/id_tv_air_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="风速" />
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/id_img_air_direction"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/speed_s" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/id_tv_air_direction"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="扫风" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="#301b09"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_air_switch"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/power_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="开关"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_btn_mode"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_ac_mode_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="模式"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_btn_speed"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_ac_speed_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="风速"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_btn_direction"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_ac_swing_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="扫风"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

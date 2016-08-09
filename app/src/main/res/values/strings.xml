@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">空调手环</string>
+    <string name="title_name">我的手环</string>
+    <string name="title_text">我的手环</string>
+    <string name="user_name">大云屋•众创空间</string>
+    <string name="collected_text">最新采集：</string>
+    <string name="collectedTime_text">2016-04-19 21:00</string>
+    <string name="celsius">℃</string>
+    <string name="body_temperature_text">体温</string>
+    <string name="body_temperature_degree">0.0</string>
+    <string name="room_temperature_text">室温</string>
+    <string name="room_temperature_degree">0.0</string>
+    <string name="humidity_text">湿度</string>
+    <string name="humidity_degree">0.0</string>
+    <string name="percent">%</string>
+    <string name="run_text">步数</string>
+    <string name="run_amount">0.0</string>
+    <string name="run_per">步</string>
+    <string name="calorie_text">卡路里</string>
+    <string name="calorie_amount">0.0</string>
+    <string name="calorie_per">大卡</string>
+    <string name="air_text">空调温度</string>
+    <string name="air_condition_degree">0.0</string>
+    <string name="call_for_help">求助设置</string>
+    <string name="about">关于</string>
+</resources>

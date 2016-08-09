@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <!--<TextView-->
+        <!--android:text="舒适度"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="舒适"
+        android:layout_marginTop="40dp"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="舒适度等级：0" />
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/id_comfort_body_temper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="体温: 37℃"
+            android:layout_weight="1"
+
+             />
+        <TextView
+            android:id="@+id/id_comfort_room_temper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="室温：23℃"
+            android:layout_weight="1"
+
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/id_comfort_humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="湿度: 80%"
+            android:layout_weight="1"
+
+            />
+        <TextView
+            android:id="@+id/id_comfort_wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="风速：1 m/s"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/id_comfort_metabolism"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新陈代谢率: 80%"
+            android:layout_weight="1"
+
+            />
+        <TextView
+            android:id="@+id/id_comfort_cloth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="衣服阻隔：1 "
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>
